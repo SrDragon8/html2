@@ -1,0 +1,78 @@
+<!-- esta madre es para comentarios-->
+<!DOCTYPE html>  <!-- nombre de etiqueta / propiedades de etiqueta-->
+<html lang="en"> <!-- esto es para decirle a google en lo indexado el idioma, para que lo detecte mejor -->
+        <!-- puedes usar shift + alt + a para poner comentario -->
+        <!-- toda la meta data del sitio -->
+    <head><!-- para el servidor, sirve para importar cosas, no van a ser parte del árbol si no aparte -->
+
+        <title>Mi primera pagina</title>
+    </head>
+    <body><!-- esto es todo lo que se va a renderear al final y el usuario va ver -->
+                
+        Hello world <!-- nada fuera de su componente, aquí funciona pero es solo un esqueleto -->
+        <h1>Hello world</h1> <!-- esos son para subtítulos, no para tamaños -->
+        <h2>Hello world</h2>
+        <h3>Hello world</h3>
+        <h4>Hello world</h4>
+        <h5>Hello world</h5>
+        <h6>Hello world</h6> <!-- este es el último, no hay mas headers -->
+
+        <p> soy un párrafo </p> <!-- parrafo, cualquier cosa que no sea un título y sea texto -->
+        <p> soy un párrafo </p>
+
+        <a href="https://chrome.google.com/webstore/category/extensions?hl=es"> ¡soy un link!</a> <!-- rferencia interna -->
+        <a href="./a.html">¡también soy un link! 2</a>
+        <a target="_blank" href="./a.html"> yo también soy un link 3</a>
+
+        <p> soy un párrafo pero con mas <a href="./a.html">fua</a> xD</p> <!-- unir un parrafo con un enlace, un hipervínculo -->
+        <img 
+        with="400"
+        height="500"
+        alt="meme" 
+        src="./assets/meme.jpg"
+        />
+
+        <!--alt = es texto alternativo en caso de no poderse resolver -->
+        <p></p>
+        <img
+        alt="gatito kawai"
+        src="https://st2.depositphotos.com/1000877/5947/i/950/depositphotos_59478951-stock-photo-red-kitten.jpg" html/> <!-- etiqueta que se sierra a si misma, no tiene hijos -->
+
+        <form> <!-- para crear un formulario -->
+            <label for="name">Name:</label>
+            <input 
+            placeholder="Your name please" 
+            id="name"/>   <!-- con el id nos permite asociar las cosas, en este caso el form + label de id --> <!-- el placeholder es la recomendación que va a dar -->
+            <br>
+            <br>
+            <br>
+            <br>
+            <label for="favorite_color">Color:</label>
+            <input 
+                type="radio"
+                id="favorite_color"
+                value="Morado"
+            />
+            <input 
+                type="radio"
+                id="favorite_color"
+                value="Azul"
+            />
+            <input 
+                type="radio"
+                id="favorite_color"
+                value="Verde"
+            />
+            <br><br><br><br>
+            <input 
+                type="checkbox"
+                id="lastname"
+            />
+            <input 
+            type="date"
+            id="lastname"
+            />
+        </form>
+    </body>
+
+</html>
